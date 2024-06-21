@@ -39,4 +39,22 @@
     height: 180px;
     width: 180px;
   }
+  .p-card{
+    color: rgb(175, 113, 175);
+  }
+  .l-img{
+    width: 40px;
+    height: 50px;
+  }
+ .child-1{
+  background-color: rgb(27, 1, 27);
+  color: aliceblue;
+  border-radius: 30px;
+  height: 120px;
+ 
+ }
+ .child-1:hover{
+  background-color: rgb(145, 119, 145);
+  color: black;
+ }
   
