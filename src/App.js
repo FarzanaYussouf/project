@@ -12,9 +12,9 @@ function App() {
    
    
    <Navbar/>
-   <Footer/>
+   {/* <Footer/> */}
    {/* <Home/> */}
-   <FlipCard/>
+   {/* <FlipCard/> */}
 
    </>
   );

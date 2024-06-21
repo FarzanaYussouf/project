@@ -6,7 +6,7 @@ const Footer = () => {
   <footer className="footer">
       <div className="color-change"></div>
       <div className="form-container">
-        <h2>Contact Me</h2>
+        <h2 className='fs-1 fw-bolder mt-5'>Contact Me</h2>
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />

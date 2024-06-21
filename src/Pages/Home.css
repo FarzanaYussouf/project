@@ -35,5 +35,8 @@
     color: black;
     transform: rotateY(180deg);
   }
-  
+  .c-img{
+    height: 180px;
+    width: 180px;
+  }
   
