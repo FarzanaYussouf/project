@@ -36,8 +36,8 @@
   }
   
   .nav-links li {
-    margin-right: 120px;
-    font-size: large;
+    margin-right: 40px;
+    font-size: medium ;
     font-weight: bolder;
     
   }
@@ -57,12 +57,14 @@
     border-radius: 30px;
   }
   .light {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(90deg,rgb(255, 248, 248), #c2bcbc);
     color: #333;
   }
   
   .dark {
-    background-color: #333;
+    /* background-color: #333; */
+    background: linear-gradient(90deg,rgb(54, 3, 54), #0c0c0c);
     color: #f5f5f5;
   }
   .App {
@@ -86,6 +88,25 @@
     font-size: large;
     font-weight: bold;
   }
+  .typewriter {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    /* 1% { border-color: rgb(199, 161, 21); } */
+  }
+  
   
   
   

@@ -55,6 +55,11 @@
  }
  .child-1:hover{
   background-color: rgb(145, 119, 145);
-  color: black;
+  color: black
  }
-  
+ 
+ .gradient-text {
+  background: linear-gradient(45deg,purple, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

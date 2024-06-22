@@ -23,7 +23,7 @@ const FlipCard = ({ frontContent, backContent }) => {
     return (
         <div>
             <h1 className="mb-3">PROJECTS</h1>
-            <p className="fw-bold fs-4 text-start p-card px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea perferendis mollitia!sectetur adipisicing elit. Cupiditat sectetur adipisicing.</p>
+            <p className="fw-bold fs-4 text-start p-card px-5 gradient-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea perferendis mollitia!sectetur adipisicing elit. Cupiditat sectetur adipisicing.</p>
             <div className="row mt-5 mb-3">
                 <div className="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
@@ -101,7 +101,7 @@ const FlipCard = ({ frontContent, backContent }) => {
                         <img className="l-img ms-5" src="/images/expe.jfif" alt="" />
                     </div>
                     <div className="col-5">
-                        <h1 className="me-5">My Experience</h1>
+                        <h1 className="me-5 gradient-text">My Experience</h1>
                     </div>
 
                     <div className="col-1">
@@ -110,7 +110,7 @@ const FlipCard = ({ frontContent, backContent }) => {
                     </div>
                     <div className="col-5">
 
-                        <h1 className="me-5">My Education</h1>
+                        <h1 className="me-5 gradient-text">My Education</h1>
 
                     </div>
                 </div>
@@ -159,7 +159,7 @@ const FlipCard = ({ frontContent, backContent }) => {
                     <div className="col-6">
                     <div className="container child-1">
                         <div className="col-3 mt-3 text-start mx-5">
-                            <p className="fw-bold">2022-present <br />
+                            <p className="fw-bold text-1 ">2022-present <br />
                                 LeadDeveloper <br />
                                 Lahore</p>
                                 </div>
