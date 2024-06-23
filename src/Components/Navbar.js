@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
 import FlipCard from '../Pages/Home';
+import Particles from 'react-tsparticles';
+import Footer from './Footer';
 
 
 
@@ -24,12 +26,9 @@ const Navbar = () => {
     }, 1000); // Change text color every 1 second
    
     return () => clearInterval(interval); 
-   }, [textColors]); 
-  
-    
-    
-        
-  
+  }, [textColors]); 
+
+ 
      
       const TypewriterText = () => {
         const phrases = [
@@ -55,7 +54,10 @@ const Navbar = () => {
       
           return () => clearTimeout(timeout);
         }, [currentPhrase, textIndex]);
-      }   
+        return <span className="typewriter">{displayedText}</span>;
+      }  
+     
+           
    
   return (
     <div>
@@ -98,27 +100,30 @@ const Navbar = () => {
           <div className='row'>
             <div className='col-lg-6 col-md-6 col-sm-6'>
               {/* <button className='fs-4'>Welcome to my Portfolio</button> */}
-              <div className="typewriter">
-      {/* {displayedText} */}
+             <div className="typewriter">   
+      {/* <h2>{displayedText}</h2> */}
       <h2>Welcome to My Portfolio</h2>
       
-      <TypewriterText />
-    </div>
+      {/* <TypewriterText /> */}
+  </div> 
+    
     
               <h1 className="animated-text mt-4" style={{ color: textColors[currentTextColor] }}>THINK. MAKE. <br />SOLVE.</h1>
               <p>-What we Do</p>
              
               <p className='ptext text-start ms-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque iste iusto.</p>
-              <button className='btn btn-info mt-4 mb-4'>Learn More</button>
+              <button className=' btn btn-nav mt-4 mb-4'>Learn More</button>
             </div>
 
             <div className='col-lg-6 col-md-6 col-sm-6'>
-              <img className='mt-5' src="/images/pic.jfif" alt="" />
-
+            <img className='mt-5' src="/images/pic.jfif" alt="" />
+           
+   
             </div>
           </div>
         </div>
         <FlipCard/>
+        <Footer/>
       </div>
       
     </div>

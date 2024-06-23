@@ -20,6 +20,9 @@
     border-radius: 50px;
     padding: 0 0px;
   }
+  .btn-nav{
+    background: linear-gradient(80deg,rgb(204, 152, 232), #c1b1ad);
+  }
   
   @keyframes bounce {
     from {
@@ -49,7 +52,7 @@
   }
   
   .nav-links li a:hover {
-    color: #ffcc00; /* Change to your preferred hover color */
+    color: #f9e723; /* Change to your preferred hover color */
   }
   .togglebtn{
     background-color: black;
@@ -106,6 +109,8 @@
     from, to { border-color: transparent }
     /* 1% { border-color: rgb(199, 161, 21); } */
   }
+  /* App.css or your preferred CSS file */
+
   
   
   

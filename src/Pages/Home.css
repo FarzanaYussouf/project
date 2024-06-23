@@ -26,12 +26,12 @@
   }
   
   .flip-card-front {
-    background-color: #333;
-    color: white;
+    background-color: #0e9da5;
+    color: rgb(12, 12, 12);
   }
   
   .flip-card-back {
-    background-color: #ffcc00;
+    background-color: #bb9ab1;
     color: black;
     transform: rotateY(180deg);
   }
@@ -59,7 +59,7 @@
  }
  
  .gradient-text {
-  background: linear-gradient(45deg,purple, #fad0c4);
+  background: linear-gradient(90deg,rgb(155, 2, 155), #fad0c4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
