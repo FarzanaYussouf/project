@@ -5,7 +5,6 @@ import Particles from 'react-tsparticles';
 import Footer from './Footer';
 
 
-
 const Navbar = () => {
 
   const [theme, setTheme] = useState('dark');
@@ -66,8 +65,12 @@ const Navbar = () => {
  
       {/* <nav className="navbar"> */}
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-black">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-black"
+     
+      >
+        <div class="container-fluid"
+         
+        >
           {/* Your portfolio content goes here */}
 
 
@@ -116,7 +119,7 @@ const Navbar = () => {
             </div>
 
             <div className='col-lg-6 col-md-6 col-sm-6'>
-            <img className='mt-5' src="/images/pic.jfif" alt="" />
+            <img className='mt-5 pro-img' src="/images/pic.jfif" alt="" />
            
    
             </div>

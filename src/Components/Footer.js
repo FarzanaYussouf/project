@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import"./Footer.css"
 import { FaInstagramSquare } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
@@ -9,32 +9,34 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <>
-    <div className='container'>
-      <h1>CONTACT ME</h1>
-      <div className='contact-items row'>
+    <div className='container'
+     data-aos="zoom-out-up"
+     data-aos-duration="1000">
+      <h3 className=' mt-5 mb-5'>CONTACT ME</h3>
+      <div className='   contact-items'>
    
-        <div className='items col-2'>
+        <a className='items fs-1 me-5 '>
         <FaInstagramSquare />
-        </div>
+        </a>
         
-        <div className='items col-2'>
+        <a className='items fs-1 me-5' >
         <CiFacebook />
-        </div>
+        </a>
         
-        <div className='items col-2'>
+        <a className='items fs-1 me-5'>
         <CiLinkedin />
-        </div>
+        </a>
         
-        <div className='items col-2'>
+        <a className='items fs-1 me-5'>
         <FaSquareXTwitter />
-        </div>
+        </a>
 
-        <div className='items col-2'>
+        <a className='items fs-1 me-5'>
         <FaSquareGithub />
-        </div>
-        <div className='items col-2'>
+        </a>
+        <a href='https://www.google.com' className='items fs-1 me-5'>
         <SiGmail />
-        </div>
+        </a>
         </div>
       </div>
       

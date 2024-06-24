@@ -110,7 +110,42 @@
     /* 1% { border-color: rgb(199, 161, 21); } */
   }
   /* App.css or your preferred CSS file */
-
+.pro-img{
+  height: 180px;
+  width: 180px;
+  border: 4px solid rgb(182, 242, 62);
+  border-radius: 100%;
+  animation-name: proimage;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes proimage{
+0%{
+border-color: burlywood;
+transform: translate(0lor,0px);
+box-shadow:   10px 10px 100px 50px burlywoo; 
+}
+25%{
+  border-color:greenyellow;
+ 
+  box-shadow:   10px 10px 100px 50px greenyellow
+}
+50%{
+  border-color: purple;
+  transform: translate(0,10px);
+  box-shadow:   10px 10px 100px 50px purple
+}
+75%{
+  border-color: rgba(220, 243, 138, 0.613);
+ 
+  box-shadow:   10px 10px 100px 50px rgba(220, 243, 138, 0.613); 
+}
+100%{
+  border-co:rgb(131, 192, 235);
+  transform: translate(0,-10px);
+  box-shadow:   10px 10px 100px 50px rgb(131, 192, 235); 
+}
+}
   
   
   

@@ -24,7 +24,9 @@ const FlipCard = ({ frontContent, backContent }) => {
         <div>
             <h1 className="mb-3">PROJECTS</h1>
             <p className="fw-bold fs-4 text-start p-card px-5 gradient-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea perferendis mollitia!sectetur adipisicing elit. Cupiditat sectetur adipisicing.</p>
-            <div className="row mt-5 mb-3">
+            <div className="row mt-5 mb-3"
+             data-aos="zoom-in-up"
+             data-aos-duration="1000">
                 <div className="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
 
@@ -94,7 +96,10 @@ const FlipCard = ({ frontContent, backContent }) => {
                     </div>
                 </div>
             </div>
-            <div className="container mt-5">
+            <div className="container mt-5"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            >
                 <div className=" row text-center">
 
                     <div className="col-1">
@@ -117,7 +122,10 @@ const FlipCard = ({ frontContent, backContent }) => {
 
                 <div className="row ">
                     <div className="col-6">
-                    <div className="container child-1">
+                    <div className="container child-1"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    >
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold">2022-present <br />
                                 LeadDeveloper <br />
@@ -126,27 +134,9 @@ const FlipCard = ({ frontContent, backContent }) => {
                         </div>
                     </div>
                     <div className="col-6">
-                    <div className="container child-1 ">
-                        <div className="col-3 mt-3 text-start mx-5">
-                            <p className="fw-bold">2022-present <br />
-                                LeadDeveloper <br />
-                                Lahore</p>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row ">
-                    <div className="col-6">
-                    <div className="container child-1">
-                        <div className="col-3 mt-3 text-start mx-5">
-                            <p className="fw-bold">2022-present <br />
-                                LeadDeveloper <br />
-                                Lahore</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                    <div className="container child-1 ">
+                    <div className="container child-1 "
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold">2022-present <br />
                                 LeadDeveloper <br />
@@ -157,7 +147,33 @@ const FlipCard = ({ frontContent, backContent }) => {
                 </div>
                 <div className="row ">
                     <div className="col-6">
-                    <div className="container child-1">
+                    <div className="container child-1"
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
+                        <div className="col-3 mt-3 text-start mx-5">
+                            <p className="fw-bold">2022-present <br />
+                                LeadDeveloper <br />
+                                Lahore</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                    <div className="container child-1 "
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
+                        <div className="col-3 mt-3 text-start mx-5">
+                            <p className="fw-bold">2022-present <br />
+                                LeadDeveloper <br />
+                                Lahore</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row ">
+                    <div className="col-6">
+                    <div className="container child-1"
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold text-1 ">2022-present <br />
                                 LeadDeveloper <br />
@@ -166,7 +182,9 @@ const FlipCard = ({ frontContent, backContent }) => {
                         </div>
                     </div>
                     <div className="col-6">
-                    <div className="container child-1 ">
+                    <div className="container child-1 "
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold">2022-present <br />
                                 LeadDeveloper <br />
@@ -177,7 +195,9 @@ const FlipCard = ({ frontContent, backContent }) => {
                 </div>
                 <div className="row ">
                     <div className="col-6">
-                    <div className="container child-1">
+                    <div className="container child-1"
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold">2022-present <br />
                                 LeadDeveloper <br />
@@ -186,7 +206,9 @@ const FlipCard = ({ frontContent, backContent }) => {
                         </div>
                     </div>
                     <div className="col-6">
-                    <div className="container child-1 ">
+                    <div className="container child-1 "
+                     data-aos="zoom-in-up"
+                     data-aos-duration="1000">
                         <div className="col-3 mt-3 text-start mx-5">
                             <p className="fw-bold">2022-present <br />
                                 LeadDeveloper <br />
