@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
 import FlipCard from '../Pages/Home';
-import Particles from 'react-tsparticles';
+
 import Footer from './Footer';
+import About from '../Pages/About';
 
 
 const Navbar = () => {
@@ -59,17 +60,18 @@ const Navbar = () => {
            
    
   return (
-    <div>
+    <>
   
-
+<div>
  
       {/* <nav className="navbar"> */}
 
       <nav class="navbar navbar-expand-lg navbar-light bg-black"
      
       >
-        <div class="container-fluid"
-         
+        <div className='container'
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
         >
           {/* Your portfolio content goes here */}
 
@@ -87,6 +89,7 @@ const Navbar = () => {
         < li><a className='' href="#home">Home</a></li>
               <li><a className=' ' href="#about">About</a></li>
 
+              <li><a className='' href="#projects">Projects</a></li>
               <li><a className='' href="#contact">Contact</a></li>
             </ul>
 
@@ -99,7 +102,7 @@ const Navbar = () => {
 
       <div className={`App ${theme}`}>
 
-        <div className="portfolio-container mb-5">
+        <div className="portfolio mb-5">
           <div className='row'>
             <div className='col-lg-6 col-md-6 col-sm-6'>
               {/* <button className='fs-4'>Welcome to my Portfolio</button> */}
@@ -114,8 +117,10 @@ const Navbar = () => {
               <h1 className="animated-text mt-4" style={{ color: textColors[currentTextColor] }}>THINK. MAKE. <br />SOLVE.</h1>
               <p>-What we Do</p>
              
-              <p className='ptext text-start ms-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque iste iusto.</p>
-              <button className=' btn btn-nav mt-4 mb-4'>Learn More</button>
+              <p className='ptext text-start ms-5'>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
+
+</p>
+              <button className='btn btn-nav mt-4 mb-4'>Learn More</button>
             </div>
 
             <div className='col-lg-6 col-md-6 col-sm-6'>
@@ -126,10 +131,11 @@ const Navbar = () => {
           </div>
         </div>
         <FlipCard/>
+        <About/>
         <Footer/>
       </div>
-      
-    </div>
+      </div>
+    </>
 
 
 

@@ -4,6 +4,9 @@
     width: 200px;
     height: 200px;
     perspective: 1000px;
+    border: 5px solid purple;
+    
+    box-shadow: 2px 4px 8px 8px rgba(220, 243, 138, 0.613); 
   }
   
   .flip-card-inner {
@@ -35,6 +38,7 @@
     color: black;
     transform: rotateY(180deg);
   }
+ 
   .c-img{
     height: 180px;
     width: 180px;
@@ -54,7 +58,7 @@
  
  }
  .child-1:hover{
-  background-color: rgb(145, 119, 145);
+  background:linear-gradient(60deg, rgb(212, 87, 247),#dab6d8);
   color: black
  }
  

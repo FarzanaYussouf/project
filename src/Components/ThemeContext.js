@@ -8,7 +8,7 @@ const ThemeContext = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
-    <div>
+    <div className='container-fluid'>
       <div className={`App ${theme}`}>
       <h1>My Portfolio</h1>
       <button onClick={toggleTheme}>Toggle Theme</button>
