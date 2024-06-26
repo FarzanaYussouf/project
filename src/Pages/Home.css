@@ -4,9 +4,9 @@
     width: 200px;
     height: 200px;
     perspective: 1000px;
-    border: 5px solid purple;
+    border: 5px solid rgb(74, 212, 227);
     
-    box-shadow: 2px 4px 8px 8px rgba(220, 243, 138, 0.613); 
+    box-shadow: 2px 4px 8px 8px rgba(243, 138, 138, 0.613); 
   }
   
   .flip-card-inner {
@@ -52,18 +52,23 @@
   }
  .child-1{
   background-color: rgb(27, 1, 27);
-  color: aliceblue;
+  color: rgb(207, 221, 171);
+ 
   border-radius: 30px;
   height: 120px;
  
  }
  .child-1:hover{
-  background:linear-gradient(60deg, rgb(212, 87, 247),#dab6d8);
-  color: black
+  background:linear-gradient(60deg, rgb(206, 171, 221),#bbd7a5);
+  color: rgb(132, 45, 156)
  }
  
  .gradient-text {
-  background: linear-gradient(90deg,rgb(155, 2, 155), #fad0c4);
+  background: linear-gradient(90deg,rgb(235, 117, 235), #73b794);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.pro-text{
+  color: rgb(238, 170, 237);
+}
+

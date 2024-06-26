@@ -9,6 +9,8 @@ import FlipCard from './Pages/Home';
 import Home from './Pages/Home';
 import AOS from "aos";
 import"aos/dist/aos.css"
+import About from './Pages/About';
+
 
 
 function App() {
@@ -19,12 +21,13 @@ function App() {
   )
   return (
    <>
+
    
-   
-   <Navbar/>
+  <Navbar/>
    {/* <Footer/> */}
    {/* <Home/> */}
    {/* <FlipCard/> */}
+{/* <About/> */}
 
    </>
   );

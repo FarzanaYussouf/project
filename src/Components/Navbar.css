@@ -1,13 +1,13 @@
 /* Navbar.css */
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #333;
     color: #fff;
-  }
+  } */
   
   .logo {
     font-size: 24px;
@@ -119,19 +119,19 @@
   border: 4px solid rgb(182, 242, 62);
   border-radius: 100%;
   animation-name: proimage;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 @keyframes proimage{
 0%{
 border-color: burlywood;
-transform: translate(0lor,0px);
-box-shadow:   10px 10px 40px 30px burlywoo; 
+transform: translate(0,0px);
+box-shadow:   10px 10px 100px 30px burlywoo; 
 }
 25%{
   border-color:rgba(162, 204, 99, 0.784);
  
-  box-shadow:   10px 10px 140px 30px rgba(162, 204, 99, 0.784)
+  box-shadow:   10px 10px 100px 30px rgba(162, 204, 99, 0.784)
 }
 50%{
   border-color: purple;

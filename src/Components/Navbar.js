@@ -6,6 +6,7 @@ import Footer from './Footer';
 import About from '../Pages/About';
 
 
+
 const Navbar = () => {
 
   const [theme, setTheme] = useState('dark');
@@ -24,117 +25,128 @@ const Navbar = () => {
     const interval = setInterval(() => {
       setCurrentTextColor((prevColor) => (prevColor + 1) % textColors.length);
     }, 1000); // Change text color every 1 second
-   
-    return () => clearInterval(interval); 
-  }, [textColors]); 
 
- 
-     
-      const TypewriterText = () => {
-        const phrases = [
-          "Welcome to my portfolio.",
-          "I am a web developer.",
-          "Passionate about React."
-          // Add more phrases as needed
-        ];
-        const [currentPhrase, setCurrentPhrase] = useState(0);
-        const [displayedText, setDisplayedText] = useState('');
-        const [textIndex, setTextIndex] = useState(0);
-        useEffect(() => {
-          const timeout = setTimeout(() => {
-            if (textIndex < phrases[currentPhrase].length) {
-              setDisplayedText(prevText => prevText + phrases[currentPhrase][textIndex]);
-              setTextIndex(prevIndex => prevIndex + 1);
-            } else {
-              setDisplayedText('');
-              setTextIndex(0);
-              setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % phrases.length);
-            }
-          }, 100); // Typing speed (adjust as needed)
-      
-          return () => clearTimeout(timeout);
-        }, [currentPhrase, textIndex]);
-        return <span className="typewriter">{displayedText}</span>;
-      }  
-     
-           
-   
+    return () => clearInterval(interval);
+  }, [textColors]);
+
+
+
+  const TypewriterText = () => {
+    const phrases = [
+      "Welcome to my portfolio.",
+      "I am a web developer.",
+      "Passionate about React."
+      // Add more phrases as needed
+    ];
+    const [currentPhrase, setCurrentPhrase] = useState(0);
+    const [displayedText, setDisplayedText] = useState('');
+    const [textIndex, setTextIndex] = useState(0);
+    useEffect(() => {
+      const timeout = setTimeout(() => {
+        if (textIndex < phrases[currentPhrase].length) {
+          setDisplayedText(prevText => prevText + phrases[currentPhrase][textIndex]);
+          setTextIndex(prevIndex => prevIndex + 1);
+        } else {
+          setDisplayedText('');
+          setTextIndex(0);
+          setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % phrases.length);
+        }
+      }, 100); // Typing speed (adjust as needed)
+
+      return () => clearTimeout(timeout);
+    }, [currentPhrase, textIndex]);
+    return <span className="typewriter">{displayedText}</span>;
+  }
+
+
+
   return (
     <>
-  
-<div>
- 
-      {/* <nav className="navbar"> */}
+    <div >
+      {/* <div className='container'> */}
+        <nav class="navbar navbar-expand-lg navbar-light bg-black">
+          <div className='container'
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-black"
-     
+
+
+            <div className="logo">
+              <img className='logo-image' src="/images/logo.jfif" alt="" />
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class=" nav-links navbar-nav ms-auto me-auto mb-1 mb-lg-0 ">
+                < li><a className='' href="#home">Home</a></li>
+                <li><a className=' ' href="#about">About</a></li>
+
+                <li><a className='' href="#projects">Projects</a></li>
+                <li><a className='' href="#contact">Contact</a></li>
+              </ul>
+              <div>
+                <button className=''onClick={toggleTheme}><i class = {theme === 'light' ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <div className=''id='home'
       >
-        <div className='container'
-          data-aos="zoom-out-down"
-          data-aos-duration="1000"
-        >
-          {/* Your portfolio content goes here */}
-
-
-          <div className="logo">
-            <img className='logo-image' src="/images/logo.jfif" alt="" />
-          </div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div className={`App ${theme}`}>
          
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class=" nav-links navbar-nav ms-auto me-auto mb-1 mb-lg-0 ">
-        < li><a className='' href="#home">Home</a></li>
-              <li><a className=' ' href="#about">About</a></li>
-
-              <li><a className='' href="#projects">Projects</a></li>
-              <li><a className='' href="#contact">Contact</a></li>
-            </ul>
-
-            <button className='' onClick={toggleTheme}><i class={theme === 'light' ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
+          <div className="portfolio mb-5">
 
 
-          </div>
-        </div>
-      </nav>
+            <div className="typewriter col-12" >
 
-      <div className={`App ${theme}`}>
 
-        <div className="portfolio mb-5">
-          <div className='row'>
-            <div className='col-lg-6 col-md-6 col-sm-6'>
-              {/* <button className='fs-4'>Welcome to my Portfolio</button> */}
-             <div className="typewriter">   
-      {/* <h2>{displayedText}</h2> */}
-      <h2>Welcome to My Portfolio</h2>
-      
-      {/* <TypewriterText /> */}
-  </div> 
-    
-    
-              <h1 className="animated-text mt-4" style={{ color: textColors[currentTextColor] }}>THINK. MAKE. <br />SOLVE.</h1>
-              <p>-What we Do</p>
+              <h2>Welcome to My Portfolio</h2>
+
+            </div>
+
+            <div className='row'  >
+              <div className='col-lg-6 col-md-6 col-sm-6'>
+                <h1 className="animated-text mt-4 " style={{ color: textColors[currentTextColor] }}>THINK. MAKE. <br />SOLVE.</h1>
+                <p>-What we Do</p>
+
+                <p className='ptext text-start ms-5 me-5 '  data-aos="zoom-out-up"
+               data-aos-duration="1000">
+                I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
+
+                </p>
+                <div className='col-12'>
+                  <button className='btn btn-nav mt-4 mb-4'>Learn More</button>
+                </div>
+              </div>
+
+
+              <div className='col-lg-4 col-md-4 col-sm-4'
              
-              <p className='ptext text-start ms-5'>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
-
-</p>
-              <button className='btn btn-nav mt-4 mb-4'>Learn More</button>
+             >
+                <img className='mt-5 ms-5 pro-img' src="/images/img1.jfif" alt="" />
+              </div>
             </div>
 
-            <div className='col-lg-6 col-md-6 col-sm-6'>
-            <img className='mt-5 pro-img' src="/images/pic.jfif" alt="" />
-           
-   
-            </div>
           </div>
+
+
+          <FlipCard />
+          <About />
+          <Footer />
         </div>
-        <FlipCard/>
-        <About/>
-        <Footer/>
       </div>
-      </div>
+      
+
+
+
+
     </>
 
 

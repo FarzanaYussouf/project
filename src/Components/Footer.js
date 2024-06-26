@@ -6,6 +6,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
@@ -15,28 +16,28 @@ const Footer = () => {
       <h3 className=' mt-5 mb-5 text-center gradient-text '>CONTACT ME</h3>
       <div className='contact-items'>
    
-        <a className='items fs-1 me-4 '>
+        <Link to='https://www.instagram.com' className='items fs-1 me-4 '>
         <FaInstagramSquare />
-        </a>
+        </Link>
         
-        <a className='items fs-1 me-4' >
+        <Link to='https://www.facebook.com' className='items fs-1 me-4' >
         <CiFacebook />
-        </a>
+        </Link>
         
-        <a className='items fs-1 me-4'>
+        <Link to='https://www.linkedin.com' className='items fs-1 me-4'>
         <CiLinkedin />
-        </a>
+        </Link>
         
-        <a className='items fs-1 me-4'>
+        <Link to = 'https://www.google.com'className='items fs-1 me-4'>
         <FaSquareXTwitter />
-        </a>
+        </Link>
 
-        <a className='items fs-1 me-4'>
+        <Link to= 'https://www.github.com' className='items fs-1 me-4'>
         <FaSquareGithub />
-        </a>
-        <a href='https://www.google.com' className='items fs-1 me-5'>
+        </Link>
+        <Link to ='https://www.google.com' className='items fs-1 me-5'>
         <SiGmail />
-        </a>
+        </Link>
         </div>
       </div>
       
