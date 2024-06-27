@@ -18,7 +18,7 @@ const About = () => {
 
 
                         <div className="col-5 mt-5">
-                            <h1 className="me-3 gradient-text">My Experience</h1>
+                            <h1 className="me-5 gradient-text">My Experience</h1>
                         </div>
 
                         <div className="col-1 mt-5">
@@ -27,7 +27,7 @@ const About = () => {
                         </div>
                         <div className="col-5">
 
-                            <h1 className="me-4 mt-5 gradient-text">My Education</h1>
+                            <h1 className="me-5 mt-5 gradient-text">My Education</h1>
 
                         </div>
                     </div>

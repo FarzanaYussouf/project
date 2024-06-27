@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import "./Navbar.css"
 import FlipCard from '../Pages/Home';
 
 import Footer from './Footer';
 import About from '../Pages/About';
+import Typed from 'typed.js';
 
 
 
@@ -38,6 +39,7 @@ const Navbar = () => {
       "Passionate about React."
       // Add more phrases as needed
     ];
+    
     const [currentPhrase, setCurrentPhrase] = useState(0);
     const [displayedText, setDisplayedText] = useState('');
     const [textIndex, setTextIndex] = useState(0);
@@ -57,7 +59,22 @@ const Navbar = () => {
     }, [currentPhrase, textIndex]);
     return <span className="typewriter">{displayedText}</span>;
   }
-
+// const typedRef = useRef(null)
+// useEffect(() => {
+//   const options={
+//     strings:[
+//     "Welcome to my Profile",
+//     "I am a Web Developer",
+//     "Andriod Developer"],
+//     typeSpeed:50,
+//     backSpeed:50,
+//     loop:true
+//   }
+//   const typed = new Typed(typedRef.current , options)
+//   return()=>{
+//   typed.destroy()
+//   }
+// },[])
 
 
   return (
@@ -89,7 +106,7 @@ const Navbar = () => {
                 <li><a className='' href="#contact">Contact</a></li>
               </ul>
               <div>
-                <button className=''onClick={toggleTheme}><i class = {theme === 'light' ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
+                <button className='logo-btn'onClick={toggleTheme}><i class = {theme === 'light' ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
               </div>
             </div>
           </div>
@@ -105,18 +122,18 @@ const Navbar = () => {
 
 
             <div className="typewriter col-12" >
-
-
-              <h2>Welcome to My Portfolio</h2>
+    
+            
+                      <h1>Welcome to my Profile</h1>
 
             </div>
 
             <div className='row'  >
-              <div className='col-lg-6 col-md-6 col-sm-6'>
+              <div className='col-lg-8 col-md-6 col-sm-6'>
                 <h1 className="animated-text mt-4 " style={{ color: textColors[currentTextColor] }}>THINK. MAKE. <br />SOLVE.</h1>
                 <p>-What we Do</p>
 
-                <p className='ptext text-start ms-5 me-5 '  data-aos="zoom-out-up"
+                <p className='ptext text-start ms-5 me-1 fw-bold'  data-aos="zoom-out-up"
                data-aos-duration="1000">
                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
 

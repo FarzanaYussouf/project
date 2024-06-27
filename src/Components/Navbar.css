@@ -16,9 +16,11 @@
   .logo-image{
     height: 70px;
     width: 70px;
-    border: none;
-    border-radius: 50px;
+    /* border: none;
+    border-radius: 50px; */
     padding: 0 0px;
+    border: 3px solid rgb(161, 214, 190);
+    border-radius: 100%;
   }
   .btn-nav{
     background: linear-gradient(80deg,rgb(204, 152, 232), #c1b1ad);
@@ -105,7 +107,7 @@
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 200% }
   }
   
   @keyframes blink-caret {
@@ -116,7 +118,7 @@
 .pro-img{
   height: 180px;
   width: 180px;
-  border: 4px solid rgb(182, 242, 62);
+  border: 6px solid rgb(7, 232, 146);
   border-radius: 100%;
   animation-name: proimage;
   animation-duration: 5s;
@@ -148,6 +150,10 @@ box-shadow:   10px 10px 100px 30px burlywoo;
   transform: translate(0,-10px);
   box-shadow:   10px 10px 100px 30px rgba(156, 244, 228, 0.838);
 }
+}
+.logo-btn{
+  color: rgb(221, 136, 164);
+  background-color: #581861;
 }
   
   
